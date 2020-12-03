@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="_2praktika.ControlAdminViewTeachers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_2praktika"
+             mc:Ignorable="d" 
+             d:DesignHeight="76" d:DesignWidth="700">
+    <Grid HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="700" Background="White">
+        <Label Content="Vardas:" HorizontalAlignment="Left" Margin="24,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pavardė:" HorizontalAlignment="Left" Margin="18,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.91,0.703"/>
+        <Label x:Name="labelTeacherName" Content="TeacherName" HorizontalAlignment="Left" Margin="82,6,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelTeacherSurname" Content="TeacherSurname" HorizontalAlignment="Left" Margin="82,37,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonRemoveTeacher" Content="🗑️" HorizontalAlignment="Left" Margin="644,15,0,0" VerticalAlignment="Top" Width="37" Height="37" Background="#FFFF6969" FontSize="16" Click="buttonRemoveTeacher_Click"/>
+        <Button x:Name="buttonViewTeacher" Content="Peržiūrėti" HorizontalAlignment="Left" Margin="533,26,0,0" VerticalAlignment="Top" Width="75" Click="buttonViewTeacher_Click"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="_2praktika.WindowTeacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2praktika"
+        mc:Ignorable="d"
+        Title="WindowTeacher" Height="700" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Dėstytojas" HorizontalAlignment="Left" Margin="438,24,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="labelName" Content="Vardas" HorizontalAlignment="Left" Margin="719,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelSurname" Content="Pavarde" HorizontalAlignment="Left" Margin="719,41,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonLogout" Content="Atsijungti" HorizontalAlignment="Left" Margin="882,16,0,0" VerticalAlignment="Top" Width="75" Click="buttonLogout_Click"/>
+        <Grid x:Name="mainPanelStudents" HorizontalAlignment="Left" Visibility="Visible" Height="561" Margin="10,99,0,0" VerticalAlignment="Top" Width="974">
+            <Label Content="Grupė:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="Dalykas:" HorizontalAlignment="Left" Margin="244,10,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxGroup" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="comboBoxSubject" HorizontalAlignment="Left" Margin="302,10,0,0" VerticalAlignment="Top" Width="217"/>
+            <Button x:Name="buttonSearch" Content="Ieškoti" HorizontalAlignment="Left" Margin="591,13,0,0" VerticalAlignment="Top" Width="75" Click="buttonSearch_Click"/>
+            <ScrollViewer x:Name="scrollViewerStudents" Visibility="Visible" HorizontalAlignment="Left" Height="459" Margin="46,77,0,0" VerticalAlignment="Top" Width="894">
+                <StackPanel x:Name="stackPanelStudents"/>
+            </ScrollViewer>
+
+        </Grid>
+
+    </Grid>
+</Window>

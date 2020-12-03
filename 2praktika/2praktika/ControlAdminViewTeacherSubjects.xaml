@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="_2praktika.ControlAdminViewTeacherSubjects"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_2praktika"
+             mc:Ignorable="d" 
+             d:DesignHeight="76" d:DesignWidth="700">
+    <Grid HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="700" Background="White">
+        <Label Content="Dėstomas dalykas:" HorizontalAlignment="Left" Margin="20,23,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelTeacherSubjectName" Content="TeacherSubjectName" HorizontalAlignment="Left" Margin="132,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonRemoveTeacherSubject" Content="🗑️" HorizontalAlignment="Left" Margin="636,12,0,0" VerticalAlignment="Top" Width="37" Height="37" Background="#FFFF6969" FontSize="16" Click="buttonRemoveTeacherSubject_Click"/>
+
+    </Grid>
+</UserControl>
